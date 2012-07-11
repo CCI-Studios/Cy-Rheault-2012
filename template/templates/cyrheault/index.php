@@ -70,6 +70,7 @@ $typekit = 'olk3sbb';
 		<div class="container">
 			<div id="header">
 				<jdoc:include type="modules" name="header" style="rounded" />
+				<div class="clear"></div>
 			</div>
 		
 			<div id="masthead">
@@ -85,6 +86,7 @@ $typekit = 'olk3sbb';
 				<div id="bottom">
 					<jdoc:include type="modules" name="bottom" style="rounded" />
 				</div>
+				<div class="clear"></div>
 			</div>
 		</div>
 
