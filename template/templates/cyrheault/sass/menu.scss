@@ -40,8 +40,32 @@
 
 .primary {
 	
-	a {
+	a {	
 		color: $red;
+	}
+}
+
+.secondary {
+	font-size: 12px;
+	float: right;
+	
+	.menu {
+		
+		li {
+			padding: 0 10px;
+			line-height: 12px;
+			border-left: 1px solid $grey;
+			&:first-child {
+				border-left: 0;
+			}
+		}
+	}
+
+	a {
+		color: $grey;
+		&:hover {
+			color: white;
+		}
 	}
 }
 
