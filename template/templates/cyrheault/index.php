@@ -66,29 +66,34 @@ $typekit = 'olk3sbb';
 
 <body class="<?= $menu ?>">
 
-	<div id="wrapper"><div class="container">
-		<div id="header">
-			<jdoc:include type="modules" name="header" style="rounded" />
-		</div>
+	<div id="wrapper">
+		<div class="container">
+			<div id="header">
+				<jdoc:include type="modules" name="header" style="rounded" />
+			</div>
 		
-		<div class="clear"></div>
-
-		<div id="main">
-			<div id="comp">
-				<jdoc:include type="component" />
 			<div id="masthead">
 				<jdoc:include type="modules" name="masthead" style="rounded" />
 			</div>
-			<div id="bottom">
-				<jdoc:include type="modules" name="bottom" style="rounded" />
+		
+			<div class="clear"></div>
+
+			<div id="main">
+				<div id="comp">
+					<jdoc:include type="component" />
+				</div>
+				<div id="bottom">
+					<jdoc:include type="modules" name="bottom" style="rounded" />
+				</div>
 			</div>
 		</div>
 
-		<div id="footer">
+		<div id="footer"><div class="container">
 			<jdoc:include type="modules" name="footer" style="rounded" />
-		</div>
+			<div class="clear"></div>
+		</div></div>
 		
-	</div></div>
+	</div>
 
 	<div class="hidden">
 		<jdoc:include type="modules" name="hidden" style="raw" />
