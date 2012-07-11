@@ -368,7 +368,7 @@ table {
 body, select, input, textarea {
   color: #444;
   /* off black */
-  font-family: Helvetica, Arial, sans-serif; }
+  font-family: "myriad-pro", Helvetica, Arial, sans-serif; }
 
 * {
   -moz-box-sizing: border-box;
@@ -406,6 +406,9 @@ a, a:active, a:visited {
 a:hover {
   color: teal;
   text-decoration: underline; }
+
+img {
+  max-width: 100%; }
 
 /* forms */
 /* Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
@@ -460,11 +463,9 @@ div.container
 
 */
 .container {
-  margin: 0 auto;
-  padding: 0 10px; }
-
-.container {
-  width: 960px; }
+  width: 90%;
+  max-width: 940px;
+  margin: 0 auto; }
 
 .row-12 {
   margin-left: -20px; }
@@ -609,6 +610,16 @@ div.container
   .row-24 .span-24 {
     width: 940px; }
 
+body {
+  background: url("../images/bg-body.jpg") top center no-repeat; }
+
+body {
+  border-top: 5px solid #bf1e2e; }
+
+#header {
+  padding: 37px 0 44px;
+  text-align: center; }
+
 .hmenu .menu {
   margin: 0;
   padding: 0; }
@@ -630,12 +641,18 @@ div.container
   .hmenu ul ul li {
     white-space: nowrap; }
 
+.primary a {
+  color: #bf1e2e; }
+
 .vmenu .menu {
   margin: 0;
   padding: 0; }
 .vmenu ul ul {
   margin: 0.5em 0 1em 1em;
   list-style: none; }
+
+.primary {
+  margin-top: 20px; }
 
 .clr, .clear {
   clear: both; }
@@ -678,6 +695,9 @@ div.container
 .phone-visible, .desktop-visible,
 .tablet-hidden, .mobile-hidden {
   display: none; }
+
+.primary {
+  margin-top: 0; }
 
 .tablet-visible, .mobile-visible,
 .desktop-visible, .phone-hidden {
