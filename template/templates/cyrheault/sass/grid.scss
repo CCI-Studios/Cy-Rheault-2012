@@ -13,8 +13,9 @@ div.container
 */
 
 .container {
+	width: 90%;
+	max-width: 940px;
 	margin: 0 auto;
-	padding: 0 10px;
 }
 
 @mixin grid($columns, $width, $gutter) {
