@@ -1,3 +1,15 @@
 // @group modules
 .module {} // DO NOT TOUCH
 .module h3 {} // DO TOUCH
+
+#copyright {
+	float: left;
+	
+	a {
+		color: $grey;
+		&:hover {
+			color: $red;
+			text-decoration: none;
+		}
+	}
+}
