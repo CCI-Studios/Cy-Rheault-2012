@@ -35,6 +35,10 @@ h1 {
 	padding-bottom: 20px;
 	border-bottom: 1px solid $border;
 }
+
+h2, h3, h4, h5, h6 {
+	color: $red;
+}
 a, a:active, a:visited {
 	color: red;
 	text-decoration: none;
