@@ -5,4 +5,22 @@ body {
 #wrapper {
 	background: #fff url('../images/bg-body.jpg') top center no-repeat;
 }
+
+#header {
+	padding: 37px 0 44px;
+	border-bottom: 1px solid $border;
+}
+
+#masthead {
+	padding: 50px 0 0 0;
+	
+	.home & {
+		margin-bottom: 370px;
+	}
+}
+
+#footer {
+	background: url('../images/bg_footer.jpg') top center repeat-x;
+	padding: 20px 0 40px;
+	height: 216px;
 }
