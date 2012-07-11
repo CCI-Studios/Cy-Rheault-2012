@@ -376,7 +376,7 @@ body, select, input, textarea {
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  *behavior: url(/templates/default/resources/boxsizing.htc); }
+  *behavior: url(/templates/cyrheault/resources/boxsizing.htc); }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 {
@@ -720,7 +720,8 @@ body {
   .secondary a {
     color: #b1b1b1; }
     .secondary a:hover {
-      color: white; }
+      color: white;
+      text-decoration: none; }
 
 .vmenu .menu {
   margin: 0;
