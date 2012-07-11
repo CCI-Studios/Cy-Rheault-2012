@@ -93,7 +93,7 @@ $typekit = 'olk3sbb';
 		<div id="footer"><div class="container">
 			<div id="copyright">
 				&copy; <?php echo date('Y') ?> cy rheault construction Ltd. All Rights Reserved.<br />
-				<a href="http://ccistudios.com">Site by CCI Studios</a>
+				Site by <a href="http://ccistudios.com">CCI Studios</a>
 			</div>
 			<jdoc:include type="modules" name="footer" style="rounded" />
 			<div class="clear"></div>
