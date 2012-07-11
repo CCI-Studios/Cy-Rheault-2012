@@ -44,6 +44,12 @@ h2, h3 {
 	font-weight: 300;
 	margin-bottom: 7px;
 }
+
+.item-page p,
+.module p {
+	margin-top: 0;
+}
+
 a, a:active, a:visited {
 	color: red;
 	text-decoration: none;
