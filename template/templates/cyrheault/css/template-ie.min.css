@@ -386,12 +386,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 2.142857143em; }
 
-h2 {
-  font-size: 1.285714286em; }
-
-h3 {
-  font-size: 1.285714286em; }
-
 h4 {
   font-size: 1.4em; }
 
@@ -401,6 +395,9 @@ h5 {
 h6 {
   font-size: 1.0em; }
 
+h2, h3, h4, h5, h6 {
+  color: #bf1e2e; }
+
 h1 {
   font-family: "myriad-pro-condensed", "myriad-pro", Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -408,10 +405,8 @@ h1 {
   padding-bottom: 20px;
   border-bottom: 1px solid #e6e6e6; }
 
-h2, h3, h4, h5, h6 {
-  color: #bf1e2e; }
-
 h2, h3 {
+  font-size: 1.285714286em;
   font-weight: 300;
   margin-bottom: 7px; }
 

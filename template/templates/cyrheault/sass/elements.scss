@@ -22,11 +22,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 { font-size: 2.142857143em; }
-h2 { font-size: 1.285714286em; }
-h3 { font-size: 1.285714286em; }
 h4 { font-size: 1.4em; }
 h5 { font-size: 1.2em; }
 h6 { font-size: 1.0em; }
+
+h2, h3, h4, h5, h6 {
+	color: $red;
+}
 
 h1 {
 	font-family: "myriad-pro-condensed", "myriad-pro", Helvetica, Arial, sans-serif;
@@ -36,11 +38,8 @@ h1 {
 	border-bottom: 1px solid $border;
 }
 
-h2, h3, h4, h5, h6 {
-	color: $red;
-}
-
 h2, h3 {
+	font-size: 1.285714286em;
 	font-weight: 300;
 	margin-bottom: 7px;
 }
