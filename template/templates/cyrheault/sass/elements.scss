@@ -28,6 +28,13 @@ h4 { font-size: 1.4em; }
 h5 { font-size: 1.2em; }
 h6 { font-size: 1.0em; }
 
+h1 {
+	font-family: "myriad-pro-condensed", "myriad-pro", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	margin: 32px 0 25px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid $border;
+}
 a, a:active, a:visited {
 	color: red;
 	text-decoration: none;
