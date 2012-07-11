@@ -368,7 +368,8 @@ table {
 body, select, input, textarea {
   color: #444;
   /* off black */
-  font-family: "myriad-pro", Helvetica, Arial, sans-serif; }
+  font-family: "myriad-pro", Helvetica, Arial, sans-serif;
+  font-size: .875em; }
 
 * {
   -moz-box-sizing: border-box;
@@ -379,16 +380,17 @@ body, select, input, textarea {
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold; }
+  font-weight: normal;
+  text-transform: lowercase; }
 
 h1 {
-  font-size: 2em; }
+  font-size: 2.142857143em; }
 
 h2 {
-  font-size: 1.8em; }
+  font-size: 1.285714286em; }
 
 h3 {
-  font-size: 1.6em; }
+  font-size: 1.285714286em; }
 
 h4 {
   font-size: 1.4em; }
@@ -398,6 +400,24 @@ h5 {
 
 h6 {
   font-size: 1.0em; }
+
+h1 {
+  font-family: "myriad-pro-condensed", "myriad-pro", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  margin: 32px 0 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e6e6e6; }
+
+h2, h3, h4, h5, h6 {
+  color: #bf1e2e; }
+
+h2, h3 {
+  font-weight: 300;
+  margin-bottom: 7px; }
+
+.item-page p,
+.module p {
+  margin-top: 0; }
 
 a, a:active, a:visited {
   color: red;
@@ -410,6 +430,15 @@ a:hover {
 img {
   max-width: 100%;
   height: auto; }
+
+ul {
+  margin-top: 0;
+  padding-left: 0;
+  list-style: none; }
+  ul li {
+    padding-left: 20px; }
+    #main ul li {
+      background: url("../images/bullet.png") left center no-repeat; }
 
 /* forms */
 /* Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
@@ -615,18 +644,25 @@ body {
   background: #000; }
 
 #wrapper {
-  background: white url("../images/bg-body.jpg") top center no-repeat; }
+  background-color: #FFF; }
+  .home #wrapper {
+    background: url("../images/bg-body.jpg") top center no-repeat; }
 
 #header {
   padding: 37px 0 44px;
   border-bottom: 1px solid #e6e6e6; }
 
 #masthead {
-  padding: 50px 0 0 0; }
+  padding: 50px 0 0; }
   .home #masthead {
     margin-bottom: 370px; }
 
+#main {
+  padding-bottom: 60px; }
+
 #footer {
+  font-size: 12px;
+  color: #b1b1b1;
   background: url("../images/bg_footer.jpg") top center repeat-x;
   padding: 20px 0 40px;
   height: 216px; }
@@ -636,6 +672,14 @@ body {
 
 #header {
   text-align: center; }
+
+#copyright {
+  float: left; }
+  #copyright a {
+    color: #b1b1b1; }
+    #copyright a:hover {
+      color: #bf1e2e;
+      text-decoration: none; }
 
 .hmenu {
   text-transform: lowercase; }
@@ -660,11 +704,17 @@ body {
     .hmenu ul ul li {
       white-space: nowrap; }
 
-.primary a {
-  color: #bf1e2e; }
+.primary {
+  font-size: 1.142857143em; }
+  .primary a {
+    color: #bf1e2e;
+    padding-bottom: 4px; }
+    .primary a:hover {
+      color: #000;
+      background: url("../images/bg_underline.png") bottom center repeat-x;
+      text-decoration: none; }
 
 .secondary {
-  font-size: 12px;
   float: right; }
   .secondary .menu li {
     padding: 0 10px;
@@ -713,6 +763,11 @@ body {
   color: #fff;
   text-shadow: none; }
 
+.word1 {
+  font-family: "myriad-pro-condensed", "myriad-pro", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  background: url("../images/bg_underline.png") bottom center repeat-x; }
+
 .phone-visible, .mobile-visible,
 .tablet-hidden, .desktop-hidden {
   display: block; }
@@ -729,8 +784,15 @@ body {
 .tablet-hidden, .mobile-hidden {
   display: none; }
 
-.primary {
-  margin-top: 0; }
+#bottom .module {
+  float: left;
+  width: 48.936170213%;
+  margin-left: 2.127659574%; }
+  #bottom .module:first-child {
+    margin-left: 0; }
+
+.primary .menu li {
+  padding: 0 15px; }
 
 .tablet-visible, .mobile-visible,
 .desktop-visible, .phone-hidden {
@@ -739,6 +801,13 @@ body {
 .phone-visible, .tablet-hidden
 .mobile-hidden, .desktop-hidden {
   display: none; }
+
+.module.logo {
+  float: left; }
+
+.primary {
+  float: right;
+  margin-top: 13px; }
 
 .desktop-visible, .phone-hidden,
 .tablet-hidden, .mobile-hidden {
