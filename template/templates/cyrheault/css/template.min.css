@@ -686,7 +686,7 @@ body {
     *display: inline;
     *zoom: 1;
     position: relative;
-    padding: 0 5px; }
+    padding: 0 10px; }
   .hmenu .menu > li > a,
   .hmenu .menu > li > span {
     display: block; }
@@ -723,12 +723,25 @@ body {
       color: white;
       text-decoration: none; }
 
-.vmenu .menu {
-  margin: 0;
-  padding: 0; }
-.vmenu ul ul {
-  margin: 0.5em 0 1em 1em;
-  list-style: none; }
+.vmenu {
+  background: black url("../images/bg_footer.jpg") top center repeat-x;
+  margin: 0 -40px;
+  padding: 0 40px;
+  text-align: left;
+  text-transform: lowercase; }
+  .vmenu .menu {
+    margin: 0;
+    padding: 0; }
+    .vmenu .menu li {
+      line-height: 44px;
+      padding: 0; }
+  .vmenu a {
+    color: white; }
+    .vmenu a:hover {
+      color: white; }
+  .vmenu ul ul {
+    margin: 0.5em 0 1em 1em;
+    list-style: none; }
 
 .primary {
   margin-top: 20px; }
