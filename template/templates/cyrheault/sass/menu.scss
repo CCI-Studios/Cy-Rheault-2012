@@ -78,10 +78,27 @@
 
 // @group vmenu
 .vmenu {
+	background: #000 url('../images/bg_footer.jpg') top center repeat-x;
+	margin: 0 -40px;
+	padding: 0 40px;
+	text-align: left;
+	text-transform: lowercase;
 
 	.menu {
 		margin: 0;
 		padding: 0;
+		
+		li {
+			line-height: 44px;
+			padding: 0;
+		}
+	}
+	
+	a {
+		color: white;
+		&:hover {
+			color: white;
+		}
 	}
 
 	ul ul { // submenus
