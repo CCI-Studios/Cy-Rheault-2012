@@ -10,7 +10,7 @@ class ComSlideshowDatabaseRowSlide extends KDatabaseRowDefault
 
 	public function image()
 	{
-		return "<img src=\"adsf\" alt=\"{$this->title}\" />";
+		return "<img src=\"{$this->imagePath()}\" alt=\"{$this->title}\" style=\"max-width: 100%\" />";
 	}
 
 }

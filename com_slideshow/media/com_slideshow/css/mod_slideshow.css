@@ -1,0 +1,96 @@
+.mod_slideshow .panel {
+	float: left;
+	width: 100%;
+	overflow: hidden;
+}
+
+.mod_slideshow .panel + .panel { 
+	display: none;
+}
+
+.mod_slideshow .panel > div {
+	position: relative;
+	width: 2000%;
+}
+
+.mod_slideshow .panel > div > div { /* image clip */
+	width: 5%;
+	overflow: hidden;
+	float: left;
+}
+
+
+.mod_slideshow .panel img {
+	max-width: inherit;
+	position: relative;
+	left: 0;
+	display: block;
+}
+
+.mod_slideshow .panel + .panel img { left: -100%; }
+.mod_slideshow .panel + .panel + .panel img { left: -200%; }
+.mod_slideshow .panel + .panel + .panel + .panel img { left: -300%; }
+
+.thumbs {
+	width: 100%;
+	height: 10px;
+	position: relative;
+	background: #000;
+}
+
+.thumb {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #bd1e34;
+}
+
+@media only screen and (min-width:480px) {
+	.mod_slideshow .panel {
+		width: 50%;
+	}
+
+	.mod_slideshow .panel + .panel { 
+		display: block;
+	}
+
+	.mod_slideshow .panel + .panel + .panel { 
+		display: none;
+	}
+}
+
+@media only screen and (min-width:760px) {
+	.mod_slideshow .panel {
+		width: 33.3333333%;
+	}
+
+	.mod_slideshow .panel + .panel + .panel { 
+		display: block;
+	}
+
+	.mod_slideshow .panel + .panel + .panel + .panel { 
+		display: none;
+	}
+}
+
+@media only screen and (min-width:960px) {
+	.mod_slideshow .panel {
+		width: 25%;
+	}
+
+	.mod_slideshow .panel + .panel + .panel + .panel { 
+		display: block;
+	}
+}
+
+.ie7 .mod_slideshow .panel,
+.ie8 .mod_slideshow .panel {
+	width: 25%;
+}
+
+.ie7 .mod_slideshow .panel + .panel,
+.ie8 .mod_slideshow .panel + .panel { 
+	display: block;
+}
+}

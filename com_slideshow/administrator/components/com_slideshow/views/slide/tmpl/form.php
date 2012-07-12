@@ -25,7 +25,7 @@
 			<legend><?= @text('Slide Details') ?></legend>
 
 			<ul class="adminformlist">
-				<? if (!$slide->image1): ?>
+				<? if (!$slide->image): ?>
 					<li>
 						<label for="field_image1"><?= @text('Image') ?></label>
 						<input type="file" name="image_upload" />

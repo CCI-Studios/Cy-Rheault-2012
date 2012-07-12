@@ -16,11 +16,6 @@
 	
 	<config>
 		<fields name="params">
-			<fieldset name="basic"
-				addfieldpath="/administrator/components/com_calendar/models/fields">
-				<field name="calendar_id" type="calendars" label="Calendar" />
-			</fieldset>
-
 			<fieldset name="advanced">
 				<field
 					name="layout"

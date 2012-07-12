@@ -5,5 +5,5 @@ CREATE TABLE IF NOT EXISTS `#__slideshow_slides` (
 	`link` VARCHAR(250) NOT NULL,
 	`image` VARCHAR( 250 ) NOT NULL,
 
-	`ordering` INT( 11 ) UNSIGNED NOT NULL ,
+	`ordering` INT( 11 ) UNSIGNED NOT NULL
 ) ENGINE = INNODB;
