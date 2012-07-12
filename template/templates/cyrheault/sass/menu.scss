@@ -78,12 +78,7 @@
 
 // @group vmenu
 .vmenu {
-	background: #000 url('../images/bg_footer.jpg') top center repeat-x;
-	margin: 0 -40px;
-	padding: 0 40px;
-	text-align: left;
-	text-transform: lowercase;
-
+	
 	.menu {
 		margin: 0;
 		padding: 0;
@@ -93,16 +88,24 @@
 			padding: 0;
 		}
 	}
+
+	ul ul { // submenus
+		margin: 0.5em 0 1em 1em;
+		list-style: none;
+	}
+}
+
+.mobile {
+	background: #000 url('../images/bg_footer.jpg') top center repeat-x;
+	margin: 0 -40px;
+	padding: 0 40px;
+	text-align: left;
+	text-transform: lowercase;
 	
 	a {
 		color: white;
 		&:hover {
 			color: white;
 		}
-	}
-
-	ul ul { // submenus
-		margin: 0.5em 0 1em 1em;
-		list-style: none;
 	}
 }
