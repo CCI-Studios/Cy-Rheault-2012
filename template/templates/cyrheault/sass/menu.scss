@@ -97,15 +97,24 @@
 
 .mobile {
 	background: #000 url('../images/bg_footer.jpg') top center repeat-x;
-	margin: 0 -40px;
+	margin: 0px -40px;
 	padding: 0 40px;
 	text-align: left;
 	text-transform: lowercase;
+	height: 0px;
+	overflow: hidden;
+	cursor: pointer;
+	
+	@include transition(height 250ms ease-in-out);
 	
 	a {
 		color: white;
 		&:hover {
 			color: white;
 		}
+	}
+	
+	&.menu-open {
+		height: 220px;
 	}
 }
