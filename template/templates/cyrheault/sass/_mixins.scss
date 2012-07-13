@@ -7,6 +7,14 @@
 	& { zoom:1; }
 }
 
+@mixin transition($settings) {
+	-webkit-transition: $settings;
+	-moz-transition: $settings;
+	-o-transition: $settings;
+	-ms-transition: $settings;
+	transition: $settings;
+}
+
 @mixin btn-navbar {
 	display: inline-block;
   	*display: inline;
