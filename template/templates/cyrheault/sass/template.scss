@@ -24,6 +24,7 @@
 // @import "grid-320";
 @import "styles-320";
 @media only screen and (min-width:480px) {
+	@import "menu-480";
     @import "styles-480";
 }
 @media only screen and (min-width:760px) {
@@ -33,6 +34,7 @@
     @import "styles-760";
 }
 @media only screen and (min-width:960px) {
+	@import "layout-960";
     @import "modules-960";
 	@import "menu-960";
 	@import "styles-960";
