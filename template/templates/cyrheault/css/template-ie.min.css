@@ -424,6 +424,7 @@ a:hover {
 
 img {
   max-width: 100%;
+  width: auto;
   height: auto; }
 
 ul {
@@ -836,7 +837,9 @@ body {
     margin-left: 0; }
 
 .primary .menu li {
-  padding: 0 15px; }
+  padding: 0 0 0 30px; }
+  .primary .menu li:first-child {
+    padding-left: 0; }
 
 .tablet-visible, .mobile-visible,
 .desktop-visible, .phone-hidden {
@@ -845,6 +848,12 @@ body {
 .phone-visible, .tablet-hidden
 .mobile-hidden, .desktop-hidden {
   display: none; }
+
+.container {
+  width: 940px; }
+
+#wrapper {
+  min-width: 960px; }
 
 #header {
   padding-bottom: 44px; }
