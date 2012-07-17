@@ -27,6 +27,8 @@
 		<position>debug</position>
 		<position>header</position>
 		<position>masthead</position>
+		<position>top</position>
+		<position>sidebar</position>
 		<position>bottom</position>
 		<position>footer</position>
 	</positions>
