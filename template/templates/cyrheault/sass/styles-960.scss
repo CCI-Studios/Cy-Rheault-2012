@@ -6,3 +6,11 @@
 .phone-visible, .tablet-visible,
 .mobile-visible, .desktop-hidden
 	{ display: none; }
+
+
+ul.fluid-list {
+
+	li {
+		width: 30.555555556%;
+	}
+}
