@@ -78,13 +78,13 @@
 
 // @group vmenu
 .vmenu {
+	text-transform: lowercase;
 	
 	.menu {
 		margin: 0;
 		padding: 0;
 		
 		li {
-			line-height: 44px;
 			padding: 0;
 		}
 	}
