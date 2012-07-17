@@ -27,10 +27,28 @@ body {
 	padding-bottom: 60px;
 }
 
+#sidebar {
+	float: left;
+	width: 23.404255319%;
+	padding-right: 10px;
+	border-right: 1px solid $border;
+}
+
+#bottom {
+	margin-top: 25px;
+}
+
 #footer {
 	font-size: 12px;
 	color: $grey;
 	background: url('../images/bg_footer.jpg') top center repeat-x;
 	padding: 20px 0 40px;
 	height: 216px;
+}
+
+.wide1 {
+	
+}
+.wide2 {
+	float: left;
 }
