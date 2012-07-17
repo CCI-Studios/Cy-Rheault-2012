@@ -50,11 +50,11 @@ h2, h3 {
 }
 
 a, a:active, a:visited {
-	color: red;
+	color: $red;
 	text-decoration: none;
 }
 a:hover {
-	color: teal;
+	color: $red;
 	text-decoration: underline;
 }
 
