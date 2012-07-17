@@ -95,17 +95,36 @@
 	}
 }
 
+.sidebar {
+	font-size: 18px;
+	
+	li {
+		line-height: 1.3em;
+	}
+	
+	a {
+		color: black;
+		&:hover {
+			color: $red;
+			text-decoration: none;
+		}
+	}
+}
+
 .mobile {
 	background: #000 url('../images/bg_footer.jpg') top center repeat-x;
 	margin: 0px -40px;
 	padding: 0 40px;
 	text-align: left;
-	text-transform: lowercase;
 	height: 0px;
 	overflow: hidden;
 	cursor: pointer;
 	
 	@include transition(height 250ms ease-in-out);
+	
+	li {
+		line-height: 44px;
+	}
 	
 	a {
 		color: white;
