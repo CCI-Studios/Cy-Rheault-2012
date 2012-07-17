@@ -80,13 +80,26 @@ $typekit = 'olk3sbb';
 			<div class="clear"></div>
 
 			<div id="main">
-				<div id="comp">
+				<div id="top">
+					<jdoc:include type="modules" name="top" style="rounded" />
+				</div>
+				<div id="sidebar">
+					<jdoc:include type="modules" name="sidebar" style="rounded" />
+				</div>
+				<div id="comp" class="<?php 
+							if (!$this->countModules('sidebar')) {
+								echo 'wide1';
+							} else {
+								echo 'wide2';
+							}
+					?>">
 					<jdoc:include type="component" />
 				</div>
+				<div class="clear"></div>
 				<div id="bottom">
 					<jdoc:include type="modules" name="bottom" style="rounded" />
+					<div class="clear"></div>
 				</div>
-				<div class="clear"></div>
 			</div>
 		</div>
 
