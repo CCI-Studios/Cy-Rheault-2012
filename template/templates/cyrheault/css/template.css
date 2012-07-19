@@ -384,7 +384,13 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: lowercase; }
 
 h1 {
-  font-size: 2.142857143em; }
+  font-size: 2.142857143em;
+  font-family: "myriad-pro-condensed", "myriad-pro", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #000;
+  margin: 32px 0 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e6e6e6; }
 
 h4 {
   font-size: 1.4em; }
@@ -397,13 +403,6 @@ h6 {
 
 h2, h3, h4, h5, h6 {
   color: #bf1e2e; }
-
-h1 {
-  font-family: "myriad-pro-condensed", "myriad-pro", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  margin: 32px 0 25px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e6e6e6; }
 
 h2, h3 {
   font-size: 1.285714286em;
@@ -424,7 +423,6 @@ a:hover {
 
 img {
   max-width: 100%;
-  width: auto;
   height: auto; }
 
 ul {
