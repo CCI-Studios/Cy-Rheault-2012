@@ -645,11 +645,12 @@ body {
     background: white url("../images/bg-body.jpg") top center no-repeat; }
 
 #header {
-  padding: 37px 0 0px;
-  border-bottom: 1px solid #e6e6e6; }
+  border-top: 5px solid #bf1e2e;
+  padding-bottom: 35px; }
 
 #masthead {
-  padding: 50px 0 0; }
+  padding: 50px 0 0;
+  border-top: 1px solid #e6e6e6; }
   .home #masthead {
     margin-bottom: 370px; }
 
@@ -675,11 +676,12 @@ body {
 .wide2 {
   float: left; }
 
-body {
-  border-top: 5px solid #bf1e2e; }
-
 #header {
   text-align: center; }
+
+.module.masthead-image {
+  max-height: 244px;
+  overflow: hidden; }
 
 #copyright {
   float: left; }
@@ -690,13 +692,9 @@ body {
       text-decoration: none; }
 
 .module.show-menu {
-  position: relative;
-  bottom: 0px;
-  left: 0px;
-  margin-top: 13px;
-  height: 20px;
-  width: 20px;
-  background: #bf1e2e; }
+  margin: 0 auto 37px;
+  cursor: pointer;
+  width: 35px; }
 
 .hmenu {
   text-transform: lowercase; }
@@ -723,13 +721,15 @@ body {
 
 .primary {
   font-size: 1.142857143em; }
+  .primary li.active a,
   .primary a {
     color: #bf1e2e;
     padding-bottom: 4px; }
-    .primary a:hover {
-      color: #000;
-      background: url("../images/bg_underline.png") bottom center repeat-x;
-      text-decoration: none; }
+  .primary li.active a,
+  .primary a:hover {
+    color: #000;
+    background: url("../images/bg_underline.png") bottom center repeat-x;
+    text-decoration: none; }
 
 .secondary {
   float: right; }
@@ -767,26 +767,24 @@ body {
       text-decoration: none; }
 
 .mobile {
-  background: black url("../images/bg_footer.jpg") top center repeat-x;
-  margin: 0px -40px;
-  padding: 0 40px;
-  text-align: left;
+  padding: 0 15px;
+  text-align: center;
   height: 0px;
   overflow: hidden;
   cursor: pointer;
+  background: white;
   -webkit-transition: height 250ms ease-in-out;
   -moz-transition: height 250ms ease-in-out;
   -o-transition: height 250ms ease-in-out;
   -ms-transition: height 250ms ease-in-out;
   transition: height 250ms ease-in-out; }
   .mobile li {
-    line-height: 44px; }
-  .mobile a {
-    color: white; }
-    .mobile a:hover {
-      color: white; }
+    line-height: 49px;
+    border-top: 1px solid #e6e6e6; }
+    .mobile li:first-child {
+      border-top: 0; }
   .mobile.menu-open {
-    height: 220px; }
+    height: 249px; }
 
 .clr, .clear {
   clear: both; }
@@ -865,6 +863,9 @@ ul.fluid-list {
   .primary {
     margin-top: 20px; }
 
+  #header {
+    padding-top: 37px; }
+
   .tablet-visible, .mobile-visible,
   .phone-hidden, .desktop-hidden {
     display: block; }
@@ -909,9 +910,6 @@ ul.fluid-list {
   #wrapper {
     min-width: 960px; }
 
-  #header {
-    padding-bottom: 44px; }
-
   .module.logo {
     float: left; }
 
@@ -928,4 +926,4 @@ ul.fluid-list {
     display: none; }
 
   ul.fluid-list li {
-    width: 30.555555556%; } }
+    width: 33.3333333%; } }
