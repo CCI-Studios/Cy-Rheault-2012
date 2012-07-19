@@ -41,14 +41,17 @@
 .primary {
 	font-size: 1.142857143em;
 	
+	li.active a,
 	a {	
 		color: $red;
 		padding-bottom: 4px;
-		&:hover {
-			color: #000;
-			background: url('../images/bg_underline.png') bottom center repeat-x;
-			text-decoration: none;
-		}
+	}
+	
+	li.active a,
+	a:hover {
+		color: #000;
+		background: url('../images/bg_underline.png') bottom center repeat-x;
+		text-decoration: none;
 	}
 }
 
