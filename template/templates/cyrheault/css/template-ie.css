@@ -681,7 +681,8 @@ body {
 
 .module.masthead-image {
   max-height: 244px;
-  overflow: hidden; }
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); }
 
 #copyright {
   float: left; }
