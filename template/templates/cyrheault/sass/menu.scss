@@ -115,28 +115,24 @@
 }
 
 .mobile {
-	background: #000 url('../images/bg_footer.jpg') top center repeat-x;
-	margin: 0px -40px;
-	padding: 0 40px;
-	text-align: left;
+	padding: 0 15px;
+	text-align: center;
 	height: 0px;
 	overflow: hidden;
 	cursor: pointer;
+	background: white;
 	
 	@include transition(height 250ms ease-in-out);
 	
 	li {
-		line-height: 44px;
-	}
-	
-	a {
-		color: white;
-		&:hover {
-			color: white;
+		line-height: 49px;
+		border-top: 1px solid $border;
+		&:first-child {
+			border-top: 0;
 		}
 	}
 	
 	&.menu-open {
-		height: 220px;
+		height: 249px;
 	}
 }
