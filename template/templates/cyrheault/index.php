@@ -69,6 +69,10 @@ $typekit = 'olk3sbb';
 	<div id="wrapper">
 		<div class="container">
 			<div id="header">
+		<div id="mobile-menu">
+			<jdoc:include type="modules" name="mobile-menu" style="xhtml" />
+			<div class="clear"></div>
+		</div>
 				<jdoc:include type="modules" name="header" style="rounded" />
 				<div class="clear"></div>
 			</div>
