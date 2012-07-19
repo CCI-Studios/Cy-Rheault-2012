@@ -2,6 +2,11 @@
 .module {} // DO NOT TOUCH
 .module h3 {} // DO TOUCH
 
+.module.masthead-image {
+	max-height: 244px;
+	overflow: hidden;
+}
+
 #copyright {
 	float: left;
 	
