@@ -844,7 +844,8 @@ body {
       padding: 0;
       background: none; }
     #phocagallery .phocagallery-box-file div {
-      display: block; }
+      display: block;
+      background: none; }
 
 div.category-block,
 div.phocagallery-box-file {
@@ -857,10 +858,6 @@ div.phocagallery-box-file {
   div.phocagallery-box-file > div {
     padding-left: 18px;
     margin: 0 0 30px; }
-    div.category-block > div > div ~ div,
-    div.phocagallery-box-file > div > div ~ div {
-      text-align: center;
-      margin: 3px 0 0; }
   div.category-block img,
   div.phocagallery-box-file img {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); }
@@ -873,9 +870,9 @@ div.phocagallery-box-file {
 
 div.category-block:hover a {
   color: #bf1e2e; }
-
-#pg-icons {
-  display: none; }
+div.category-block > div > div ~ div {
+  text-align: center;
+  margin: 3px 0 0; }
 
 .remove {
   display: none; }
