@@ -75,15 +75,18 @@ div.phocagallery-box-file {
 	}
 }
 
-div.category-block:hover {
-	a {
-		color: $red;
+// categories only view
+div.category-block {
+	&:hover {
+		a {
+			color: $red;
+		}
+	}	
+	
+	> div > div ~ div {
+		text-align: center;
+		margin: 3px 0 0;
 	}
-}
-
-//removes icons in phocogallery
-#pg-icons {
-	display: none;
 }
 
 //for phocogallery "powered by" 
