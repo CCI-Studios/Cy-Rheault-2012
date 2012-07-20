@@ -51,7 +51,7 @@
 	}
 	
 }
-
+//both categories and category views
 div.category-block,
 div.phocagallery-box-file {
 	float: left;
@@ -61,11 +61,6 @@ div.phocagallery-box-file {
 	> div {
 		padding-left: 18px;
 		margin: 0 0 30px;
-		
-		> div ~ div {
-				text-align: center;
-				margin: 3px 0 0;
-		}
 	}
 	
 	img {
