@@ -7,10 +7,7 @@
 .mobile-visible, .desktop-hidden
 	{ display: none; }
 
-
-ul.fluid-list {
-
-	li {
-		width: 33.3333333%;
-	}
+div.category-block,
+div.phocagallery-box-file {
+	width: 33.333333%;
 }
