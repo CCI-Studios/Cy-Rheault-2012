@@ -19,6 +19,7 @@
 @import "menu-320";
 
 @import "styles";
+@import "com_phocagallery";
 @import "com_content";
 
 // @import "grid-320";
@@ -27,6 +28,7 @@
 	@import "menu-480";
 	@import "layout-480";
     @import "styles-480";
+	@import "com_phocagallery-480";
 }
 @media only screen and (min-width:760px) {
 	// @import "grid-760";
@@ -40,6 +42,7 @@
     @import "modules-960";
 	@import "menu-960";
 	@import "styles-960";
+	@import "com_phocagallery-960";
 }
 @media only screen and (min-width:1100px) {
     // @import "1100-up";

@@ -19,6 +19,7 @@
 @import "menu-320";
 
 @import "styles";
+@import "com_phocagallery";
 @import "com_content";
 
 // @media queries
@@ -26,6 +27,7 @@
 @import "styles-320";
 @import "layout-480";
 @import "styles-480";
+@import "com_phocagallery-480";
 @import "menu-480";
 // @import "grid-760";
 @import "layout-760";
@@ -36,4 +38,5 @@
 @import "modules-960";
 @import "menu-960";
 @import "styles-960";
+@import "com_phocagallery-960";
 // don't load 1100, assume std desktop
