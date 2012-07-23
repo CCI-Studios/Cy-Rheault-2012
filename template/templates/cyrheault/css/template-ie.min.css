@@ -432,7 +432,7 @@ ul {
   ul li {
     padding-left: 20px; }
     #bottom ul li {
-      background: url("../images/bullet.png") left center no-repeat; }
+      background: url("../images/bullet.png") left 5px no-repeat; }
 
 /* forms */
 /* Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
