@@ -877,6 +877,13 @@ div.category-block > div > div ~ div {
   text-align: center;
   margin: 3px 0 0; }
 
+.pg-inline {
+  float: left;
+  width: 100%;
+  padding-top: 1em; }
+  .pg-inline:first-child {
+    padding-top: 0; }
+
 .phone-visible, .mobile-visible,
 .tablet-hidden, .desktop-hidden {
   display: block; }
@@ -905,11 +912,9 @@ div.category-block > div > div ~ div {
     width: 50%; }
 
   .pg-inline {
-    float: left;
-    width: 100%;
-    margin-top: 1em; }
-    .pg-inline:first-child {
-      margin-top: 0; } }
+    float: none;
+    width: auto;
+    padding-top: 0; } }
 @media only screen and (min-width:760px) {
   .wide2 {
     width: 76.595744681%;
