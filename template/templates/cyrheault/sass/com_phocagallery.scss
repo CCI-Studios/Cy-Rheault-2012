@@ -58,3 +58,13 @@ div.category-block {
 		margin: 3px 0 0;
 	}
 }
+
+// ordering and display num selects
+.pg-inline {
+	float: left;
+	width: 100%;
+	padding-top: 1em;
+	&:first-child {
+		padding-top: 0;
+	}
+}
