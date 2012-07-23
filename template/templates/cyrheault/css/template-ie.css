@@ -831,6 +831,9 @@ body {
   font-weight: bold;
   background: url("../images/bg_underline.png") bottom center repeat-x; }
 
+.remove {
+  display: none; }
+
 #phocagallery {
   margin-left: -19px; }
   #phocagallery .phocagallery-box-file {
@@ -874,28 +877,6 @@ div.category-block > div > div ~ div {
   text-align: center;
   margin: 3px 0 0; }
 
-.remove {
-  display: none; }
-
-ul.fluid-list {
-  margin: 0;
-  text-align: center;
-  text-transform: lowercase;
-  line-height: 1.7em; }
-  ul.fluid-list li {
-    float: left;
-    width: 100%;
-    margin: 0 0 30px 0;
-    padding: 0; }
-    ul.fluid-list li img {
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); }
-    ul.fluid-list li a {
-      color: black;
-      font-size: 18px; }
-      ul.fluid-list li a:hover {
-        color: #bf1e2e;
-        text-decoration: none; }
-
 .phone-visible, .mobile-visible,
 .tablet-hidden, .desktop-hidden {
   display: block; }
@@ -918,6 +899,13 @@ ul.fluid-list {
 div.category-block,
 div.phocagallery-box-file {
   width: 50%; }
+
+.pg-inline {
+  float: left;
+  width: 100%;
+  margin-top: 1em; }
+  .pg-inline:first-child {
+    margin-top: 0; }
 
 .primary {
   margin-top: 20px; }
