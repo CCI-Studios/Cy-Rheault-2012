@@ -1,0 +1,60 @@
+#phocagallery {
+	margin-left: -19px;
+	
+	//category view - not categories
+	.phocagallery-box-file {
+		border: 0;
+		margin: 0;
+		padding: 0;
+		background: none;
+		&:hover {
+			border: 0;
+			margin: 0;
+			padding: 0;
+			background: none;
+		}
+		
+		div {
+			display: block;
+			background: none;
+		}
+	}
+	
+}
+//both categories and category views
+div.category-block,
+div.phocagallery-box-file {
+	float: left;
+	width: 100%;
+	@include hasLayout;
+	
+	> div {
+		padding-left: 18px;
+		margin: 0 0 30px;
+	}
+	
+	img {
+		box-shadow: 0px 4px 6px rgba(black, .4);
+	}
+	
+	a {	
+		font-size: 18px;
+		font-weight: 600;
+		color: black;
+		text-transform: lowercase;
+	}
+}
+
+// categories only view
+div.category-block {
+	&:hover {
+		a {
+			color: $red;
+		}
+	}	
+	
+	> div > div ~ div {
+		text-align: center;
+		margin: 3px 0 0;
+	}
+}
