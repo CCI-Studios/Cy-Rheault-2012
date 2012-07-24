@@ -26,8 +26,6 @@ h1 {
 	font-family: "myriad-pro-condensed", "myriad-pro", Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	color: #000;
-	margin: 32px 0 25px;
-	padding-bottom: 20px;
 	border-bottom: 1px solid $border;
 }
 
@@ -42,7 +40,7 @@ h2, h3, h4, h5, h6 {
 h2, h3 {
 	font-size: 1.285714286em;
 	font-weight: 300;
-	margin-bottom: 7px;
+	margin: 0 0 7px;
 }
 
 .item-page p,
