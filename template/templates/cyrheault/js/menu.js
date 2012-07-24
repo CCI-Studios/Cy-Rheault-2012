@@ -1,13 +1,13 @@
 window.addEvent('domready', function() {
 	var displayers = $$('.show-menu'),
 		wrapper = $('wrapper'),
-		menu = $$('.vmenu.mobile')[0],
-		visible = false;
+		menu = $$('.vmenu.mobile')[0];
+		
+	menu.setStyle('max-height', menu.getElement('ul').getSize().y);
 		
 	displayers.addEvent('click', function(event) {
 		event = new Event(event);
 		event.stop();
-		menu.toggleClass('menu-open');
-		visible = !visible;
+		menu.toggleClass('menu-close');
 	});
 });
