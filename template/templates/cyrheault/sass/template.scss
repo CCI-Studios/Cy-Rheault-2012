@@ -23,10 +23,12 @@
 @import "com_content";
 
 // @import "grid-320";
+@import "elements-320";
 @import "styles-320";
 @media only screen and (min-width:480px) {
 	@import "menu-480";
 	@import "layout-480";
+	@import "elements-480";
     @import "styles-480";
 	@import "com_phocagallery-480";
 }
