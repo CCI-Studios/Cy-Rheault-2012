@@ -117,12 +117,12 @@
 .mobile {
 	padding: 0 15px;
 	text-align: center;
-	height: 0px;
+	max-height: 400px;
 	overflow: hidden;
 	cursor: pointer;
 	background: white;
 	
-	@include transition(height 250ms ease-in-out);
+	@include transition(max-height 0.3s ease-in-out);
 	
 	li {
 		line-height: 49px;
@@ -132,7 +132,7 @@
 		}
 	}
 	
-	&.menu-open {
-		height: 249px;
+	&.menu-close {
+		max-height: 0 !important;
 	}
 }
