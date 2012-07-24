@@ -768,22 +768,22 @@ body {
 .mobile {
   padding: 0 15px;
   text-align: center;
-  height: 0px;
+  max-height: 400px;
   overflow: hidden;
   cursor: pointer;
   background: white;
-  -webkit-transition: height 250ms ease-in-out;
-  -moz-transition: height 250ms ease-in-out;
-  -o-transition: height 250ms ease-in-out;
-  -ms-transition: height 250ms ease-in-out;
-  transition: height 250ms ease-in-out; }
+  -webkit-transition: max-height 0.3s ease-in-out;
+  -moz-transition: max-height 0.3s ease-in-out;
+  -o-transition: max-height 0.3s ease-in-out;
+  -ms-transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.3s ease-in-out; }
   .mobile li {
     line-height: 49px;
     border-top: 1px solid #e6e6e6; }
     .mobile li:first-child {
       border-top: 0; }
-  .mobile.menu-open {
-    height: 249px; }
+  .mobile.menu-close {
+    max-height: 0 !important; }
 
 .clr, .clear {
   clear: both; }
