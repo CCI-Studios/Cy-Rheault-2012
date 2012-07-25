@@ -91,9 +91,11 @@ $typekit = 'olk3sbb';
 				<div id="top">
 					<jdoc:include type="modules" name="top" style="rounded" />
 				</div>
+				<?php if ($this->countModules('sidebar')): ?>
 				<div id="sidebar">
 					<jdoc:include type="modules" name="sidebar" style="rounded" />
 				</div>
+				<?php endif; ?>
 				<div id="comp" class="<?php 
 							if (!$this->countModules('sidebar')) {
 								echo 'wide1';
