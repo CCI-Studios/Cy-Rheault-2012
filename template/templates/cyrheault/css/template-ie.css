@@ -420,6 +420,7 @@ a:hover {
   text-decoration: underline; }
 
 img {
+  width: auto;
   max-width: 100%;
   height: auto; }
 
@@ -676,6 +677,10 @@ body {
 #masthead {
   padding: 20px 0 0; }
 
+.module.logo {
+  max-width: 380px;
+  margin: 0 auto; }
+
 .module.masthead-image {
   max-height: 244px;
   overflow: hidden;
@@ -755,6 +760,7 @@ body {
     list-style: none; }
 
 .sidebar {
+  margin-top: -15px;
   font-size: 18px; }
   .sidebar li {
     line-height: 44px; }
@@ -956,7 +962,8 @@ div.phocagallery-box-file {
   padding-left: 20px; }
 
 .module.logo {
-  float: left; }
+  float: left;
+  margin: 0; }
 
 .primary {
   float: right;
