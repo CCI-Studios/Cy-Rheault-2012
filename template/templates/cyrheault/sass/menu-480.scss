@@ -1,3 +1,8 @@
 .primary {
 	margin-top: 20px;
+	
+	li.active a,
+	a {	
+		margin: 0 0 0 10px;
+	}
 }

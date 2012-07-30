@@ -1,12 +1,7 @@
 .primary {
 	
-	.menu {
-		
-		li {
-			padding: 0 0 0 30px;
-			&:first-child {
-				padding-left: 0;
-			}
-		}
+	li.active a,
+	a {	
+		margin: 0 0 0 25px;
 	}
 }
