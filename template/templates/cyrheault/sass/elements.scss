@@ -16,7 +16,7 @@ body, select, input, textarea {
 }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .cfdiv_header {
 	font-weight: normal;
 	text-transform: lowercase;
 }
@@ -33,11 +33,11 @@ h4 { font-size: 1.4em; }
 h5 { font-size: 1.2em; }
 h6 { font-size: 1.0em; }
 
-h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6, .cfdiv_header {
 	color: $red;
 }
 
-h2, h3 {
+h2, h3, .cfdiv_header {
 	font-size: 1.285714286em;
 	font-weight: 300;
 	margin: 0 0 7px;
