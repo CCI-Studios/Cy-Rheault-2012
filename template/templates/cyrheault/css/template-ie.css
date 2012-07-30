@@ -379,7 +379,7 @@ body, select, input, textarea {
   *behavior: url(/templates/cyrheault/resources/boxsizing.htc); }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .cfdiv_header {
   font-weight: normal;
   text-transform: lowercase; }
 
@@ -399,10 +399,10 @@ h5 {
 h6 {
   font-size: 1.0em; }
 
-h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6, .cfdiv_header {
   color: #bf1e2e; }
 
-h2, h3 {
+h2, h3, .cfdiv_header {
   font-size: 1.285714286em;
   font-weight: 300;
   margin: 0 0 7px; }
@@ -458,7 +458,7 @@ button, input, select, textarea {
 /* Colors for form validity */
 /* TODO Update valid/invalid colors */
 input:invalid, textarea:invalid {
-  border-radius: 1px;
+  border-radius: 3px;
   -moz-box-shadow: 0px 0px 5px red;
   -webkit-box-shadow: 0px 0px 5px red;
   box-shadow: 0px 0px 5px red; }
@@ -471,6 +471,34 @@ input:invalid, textarea:invalid {
 button {
   width: auto;
   overflow: visible; }
+
+.ccms_form_element {
+  padding-left: 0; }
+  .ccms_form_element label {
+    font-weight: normal;
+    text-transform: lowercase; }
+
+input,
+textarea {
+  border-radius: 3px; }
+
+input[type="submit"] {
+  background-color: #bf1e2e;
+  color: white;
+  line-height: 18px;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 4px 10px !important;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); }
+
+.small-message {
+  margin: .5em 0;
+  max-width: 365px; }
+
+div.chronoform {
+  display: none; }
 
 /*
 Grids should be setup using the following structure:
