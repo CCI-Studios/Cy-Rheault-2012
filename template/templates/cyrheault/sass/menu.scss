@@ -12,17 +12,12 @@
 		*display: inline;
 		*zoom: 1;
 		position: relative;
-	
-		padding: 0 10px;
+		padding: 0;
 	}
 
 	.menu > li > a,
 	.menu > li > span {
 		display: block;
-
-		span {
-
-		}
 	}
 
 	ul ul { // submenu
