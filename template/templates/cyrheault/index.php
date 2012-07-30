@@ -135,6 +135,7 @@ $typekit = 'olk3sbb';
 		<script src="/templates/<?= $this->template ?>/js/html5.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/lettering.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/menu.js"></script>
+		<script src="/templates/<?= $this->template ?>/js/detectmobilebrowser.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/rollover.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/script-init.js"></script>
 	<?php else: ?>
