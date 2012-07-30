@@ -3,6 +3,7 @@
  * @depends dropmenu.js
  * @depends lettering.js
  * @depends menu.js
+ * @depends detectmobilebrowser.js
  * @depends html5.js
  * @depends script-init.js
  */
