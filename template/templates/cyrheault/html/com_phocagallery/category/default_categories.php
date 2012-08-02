@@ -25,7 +25,7 @@ if(!empty($this->itemscv)) {
 if ($this->tmpl['displayimagecategoriescv'] == 1) {	
 	
 	echo "\n\n";
-	echo '<div id="phocagallery-categories-detail" class="pg-cats-cv">'."\n";
+	echo '<div class="phocagallery-categories-detail pg-cats-cv">'."\n";
 	
 	for ($i = 0; $i < $countCategories; $i++) {
 		
@@ -48,7 +48,7 @@ if ($this->tmpl['displayimagecategoriescv'] == 1) {
 		// - - - - - - - - - - - - - - -
 	
 		if ( $columns == 1 ) {
-			echo '<table>'."\n";
+			echo '<div class="gallery-block">'."\n";
 		} else {
 			$float = 0;
 			foreach ($begin as $k => $v)
@@ -58,12 +58,12 @@ if ($this->tmpl['displayimagecategoriescv'] == 1) {
 				}
 			}
 			if ($float == 1) {		
-				echo '<div style="position:relative;float:left;margin:10px;"><table>'."\n";
+				echo '<div style="position:relative;float:left;margin:10px;"><div>'."\n";
 			}
 		}
 
-		echo '<tr>';		
-		echo '<td align="center" valign="middle" style="'.$this->tmpl['imagebgcv'].';text-align:center;"><a href="'.$this->itemscv[$i]->link.'">';
+		echo '<div>';		
+		echo '<div align="center" valign="middle" style="text-align:center;"><a href="'.$this->itemscv[$i]->link.'">';
 		if (isset($this->itemscv[$i]->extpic) && $this->itemscv[$i]->extpic) {
 			
 			$correctImageRes = PhocaGalleryPicasa::correctSizeWithRate($this->itemscv[$i]->extw, $this->itemscv[$i]->exth,$picCorW, $picCorH );
@@ -72,19 +72,19 @@ if ($this->tmpl['displayimagecategoriescv'] == 1) {
 		} else {
 			echo JHtml::_( 'image',$imageThumbnail, $this->itemscv[$i]->title);
 		}
-		echo '</a></td>';
-		echo '<td><a href="'.$this->itemscv[$i]->link.'">'.$this->itemscv[$i]->title.'</a>&nbsp;';
+		echo '</a></div>';
+		echo '<div><a href="'.$this->itemscv[$i]->link.'">'.$this->itemscv[$i]->title.'</a>&nbsp;';
 		
 		if ($this->itemscv[$i]->numlinks > 0) {echo '<span class="small">('.$this->itemscv[$i]->numlinks.')</span>';}
 		
-		echo '</td>';
-		echo '</tr>'."\n";
+		echo '</div>';
+		echo '</div>'."\n";
 		
 		if ( $columns == 1 ) {
-			echo '</table>'."\n";
+			echo '</div>'."\n";
 		} else {
 			if ($i == $endFloat) {
-				echo '</table></div><div style="clear:both"></div>'."\n";
+				echo '</div></div><div style="clear:both"></div>'."\n";
 			} else {
 				$float = 0;
 				foreach ($end as $k => $v)
@@ -94,7 +94,7 @@ if ($this->tmpl['displayimagecategoriescv'] == 1) {
 					}
 				}
 				if ($float == 1) {		
-					echo '</table></div>'."\n";
+					echo '</div></div>'."\n";
 				}
 			}
 		}

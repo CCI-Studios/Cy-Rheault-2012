@@ -3,7 +3,7 @@ defined('_JEXEC') or die('Restricted access');
 echo "\n\n";
 for ($i = 0; $i < $this->tmpl['countcategories']; $i++) {
 	if ( (int)$this->tmpl['categoriescolumns'] == 1 ) {
-		echo '<div class="category-block" border="0">'."\n";
+		echo '<div class="gallery-block" border="0">'."\n";
 	} else {
 		$float = 0;
 		foreach ($this->tmpl['begin'] as $k => $v) {

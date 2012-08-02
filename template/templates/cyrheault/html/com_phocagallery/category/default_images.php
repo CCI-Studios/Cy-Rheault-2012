@@ -3,7 +3,12 @@
 // Images
 // - - - - - - - - - -
 
+
+
 if (!empty($this->items)) {
+	
+	echo '<div>'."\n";
+	
 	foreach($this->items as $key => $value) {
 	
 		if ($this->checkRights == 1) {
@@ -27,7 +32,7 @@ if (!empty($this->items)) {
 		
 			// BOX Start
 			echo "\n\n";
-			echo '<div class="phocagallery-box-file">'. "\n";
+			echo '<div class="phocagallery-box-file gallery-block">'. "\n";
 			echo '<div class="phocagallery-box-file-first">'. "\n";
 			echo '<div class="phocagallery-box-file-second">'. "\n";
 			echo '<div class="phocagallery-box-file-third">'. "\n";
@@ -360,9 +365,10 @@ if (!empty($this->items)) {
 			}
 			
 			echo '</div>';
-
 		}
 	}
+
+echo '</div>'."\n";
 
 } else {
 	// Will be not displayed
