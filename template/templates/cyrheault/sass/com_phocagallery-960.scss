@@ -1,4 +1,9 @@
-div.category-block,
-div.phocagallery-box-file {
+.gallery-block {
 	width: 33.333333%;
+	&:nth-child(3n+1) {
+		clear: both !important;
+	}
+	&:nth-child(2n+1) {
+		clear: none;
+	}
 }

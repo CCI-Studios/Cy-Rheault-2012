@@ -1,6 +1,9 @@
-div.category-block,
-div.phocagallery-box-file {
+.gallery-block {
 	width: 50%;
+	padding-left: 2%;
+	&:nth-child(2n+1) {
+		clear: both;
+	}
 }
 
 .pg-inline {

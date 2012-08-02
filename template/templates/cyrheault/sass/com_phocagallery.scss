@@ -1,40 +1,19 @@
-#phocagallery {
-	margin-left: -19px;
-	
-	//category view - not categories
-	.phocagallery-box-file {
-		border: 0;
-		margin: 0;
-		padding: 0;
-		background: none;
-		&:hover {
-			border: 0;
-			margin: 0;
-			padding: 0;
-			background: none;
-		}
-		
-		div {
-			display: block;
-			background: none;
-		}
-	}
-	
-}
-//both categories and category views
-div.category-block,
-div.phocagallery-box-file {
+//category view - not categories
+.gallery-block {
 	float: left;
 	width: 100%;
-	@include hasLayout;
-	
+	text-align: center;
+	border: 0;
+	margin: 0;
+	background: none;
+
 	> div {
-		padding-left: 18px;
+		background: none;
 		margin: 0 0 30px;
 	}
 	
-	img {
-		box-shadow: 0px 4px 6px rgba(black, .4);
+	> div > div ~ div {
+		margin: 3px 0 0;
 	}
 	
 	a {	
@@ -43,20 +22,26 @@ div.phocagallery-box-file {
 		color: black;
 		text-transform: lowercase;
 	}
-}
-
-// categories only view
-div.category-block {
+	
+	img {
+		box-shadow: 0px 4px 6px rgba(black, .4);
+	}
+	
+	
 	&:hover {
+		border: 0;
+		margin: 0;
+		background: none;
+		
 		a {
 			color: $red;
 		}
-	}	
-	
-	> div > div ~ div {
-		text-align: center;
-		margin: 3px 0 0;
 	}
+}
+
+//overrides phocagallery css
+#phocagallery .phocagallery-box-file-first {
+	@include hasLayout;
 }
 
 // ordering and display num selects
