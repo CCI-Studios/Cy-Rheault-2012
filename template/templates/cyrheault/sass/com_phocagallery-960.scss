@@ -1,5 +1,10 @@
 .gallery-block {
-	width: 33.333333%;
+	width: 31.333333333%;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-ms-box-sizing: content-box;
+	box-sizing: content-box;
+	
 	&:nth-child(3n+1) {
 		clear: both !important;
 	}
