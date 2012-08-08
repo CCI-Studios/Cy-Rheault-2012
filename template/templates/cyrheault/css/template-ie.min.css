@@ -880,20 +880,28 @@ body {
   border: 0;
   margin: 0;
   padding: 0;
-  background: none; }
-  .gallery-block > div {
+  background: none;
+  zoom: 1;
+  overflow: hidden;
+  position: relative; }
+  .gallery-block > div:first-child {
     background: none;
     margin: 0 0 30px; }
   .gallery-block > div > div ~ div {
     margin: 3px 0 0; }
+    .ie7 .gallery-block > div > div ~ div, .ie8 .gallery-block > div > div ~ div {
+      height: 35px; }
   .gallery-block a {
     font-size: 14px;
     font-weight: 600;
+    display: block;
     color: black;
     text-transform: lowercase; }
   .gallery-block img {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
-    width: 100%; }
+    border: none;
+    width: 100%;
+    max-width: none; }
   .gallery-block:hover {
     border: 0;
     margin: 0;
@@ -910,11 +918,6 @@ body {
   top: 0;
   left: 0;
   padding-top: 0; }
-
-#phocagallery .phocagallery-box-file-first {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1; }
 
 .pg-inline {
   float: left;
@@ -1019,11 +1022,7 @@ h1 {
   display: none !important; }
 
 .gallery-block {
-  width: 31.333333333%;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  -ms-box-sizing: content-box;
-  box-sizing: content-box; }
+  width: 31.333333333%; }
   .gallery-block:nth-child(3n+1) {
     clear: both !important; }
   .gallery-block:nth-child(2n+1) {

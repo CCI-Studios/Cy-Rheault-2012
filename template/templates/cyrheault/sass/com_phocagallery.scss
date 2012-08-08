@@ -7,26 +7,37 @@
 	margin: 0;
 	padding: 0;
 	background: none;
+	zoom: 1;
+	overflow: hidden;
+	position: relative;
 	
-	> div {
+	> div:first-child {
 		background: none;
 		margin: 0 0 30px;
 	}
 	
 	> div > div ~ div {
 		margin: 3px 0 0;
+		
+		.ie7 &,
+		.ie8 & {
+			height: 35px;
+		}
 	}
 	
 	a {	
 		font-size: 14px;
 		font-weight: 600;
+		display: block;
 		color: black;
 		text-transform: lowercase;
 	}
 	
 	img {
 		box-shadow: 0px 4px 6px rgba(black, .4);
-		width: 100%; //fix for ie9
+		border: none;
+		width: 100%; //NEED THIS FOR ie9
+		max-width: none;
 	}
 	
 	
@@ -51,11 +62,6 @@
 	top: 0;
 	left: 0;
 	padding-top: 0;
-}
-
-//overrides phocagallery css
-#phocagallery .phocagallery-box-file-first {
-	@include hasLayout;
 }
 
 // ordering and display num selects
