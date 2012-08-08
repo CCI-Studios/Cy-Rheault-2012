@@ -2,10 +2,13 @@
 	box-shadow: 0 5px 5px #666;
 }
 
+.mod_slideshow .slides {
+	position: relative;
+}
+
 .mod_slideshow .panel {
 	float: left;
 	width: 100%;
-	overflow: hidden;
 }
 
 .mod_slideshow .panel + .panel { 
@@ -14,18 +17,24 @@
 
 .mod_slideshow .panel > div {
 	position: relative;
+	overflow: hidden;
+}
+
+.mod_slideshow .panel > div > div {
+	position: relative;
 	width: 2000%;
 }
 
-.mod_slideshow .panel > div > div { /* image clip */
+.mod_slideshow .panel .image { /* image clip */
 	width: 5%;
+	position: relative;
 	overflow: hidden;
 	float: left;
 }
 
 
 .mod_slideshow .panel img {
-	max-width: inherit;
+	max-width: none;
 	position: relative;
 	left: 0;
 	display: block;
@@ -96,5 +105,4 @@
 .ie7 .mod_slideshow .panel + .panel,
 .ie8 .mod_slideshow .panel + .panel { 
 	display: block;
-}
 }

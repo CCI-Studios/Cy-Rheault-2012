@@ -1,6 +1,6 @@
 window.addEvent('domready', function() {
 	$$('.mod_slideshow').each(function (slideshow) {
-		var slides = slideshow.getElements('.panel > div'),
+		var slides = slideshow.getElements('.panel > div > div'),
 			current = 0,
 			delay = 3000,
 			duration = 1000,
