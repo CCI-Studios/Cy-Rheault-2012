@@ -106,10 +106,12 @@ $typekit = 'olk3sbb';
 					<jdoc:include type="component" />
 				</div>
 				<div class="clear"></div>
+				<?php if ($this->countModules('bottom')): ?>
 				<div id="bottom">
 					<jdoc:include type="modules" name="bottom" style="rounded" />
 					<div class="clear"></div>
 				</div>
+				<?php endif; ?>
 			</div>
 		</div>
  
