@@ -408,7 +408,8 @@ h2, h3, .cfdiv_header {
   margin: 0 0 7px; }
 
 .item-page p,
-.module p {
+.module p,
+.pg-category-view p {
   margin-top: 0; }
 
 a, a:active, a:visited {
@@ -966,8 +967,11 @@ h1 {
   .tablet-hidden, .mobile-hidden {
     display: none !important; }
 
+  .gallery-container {
+    margin-left: -2%; }
+
   .gallery-block {
-    width: 46%;
+    width: 50%;
     padding-left: 2%; }
     .gallery-block:nth-child(2n+1) {
       clear: both; }
@@ -1023,7 +1027,7 @@ h1 {
     display: none !important; }
 
   .gallery-block {
-    width: 31.333333333%; }
+    width: 33.333333333%; }
     .gallery-block:nth-child(3n+1) {
       clear: both !important; }
     .gallery-block:nth-child(2n+1) {
