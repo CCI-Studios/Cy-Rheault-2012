@@ -64,12 +64,7 @@
 	padding-top: 0;
 }
 
-// ordering and display num selects
-.pg-inline {
-	float: left;
-	width: 100%;
-	padding-top: 1em;
-	&:first-child {
-		padding-top: 0;
-	}
+// pagination
+#phocagallery .pagination {
+	display: none;
 }
