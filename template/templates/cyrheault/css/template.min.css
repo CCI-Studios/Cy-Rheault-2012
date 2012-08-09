@@ -684,7 +684,7 @@ body {
     margin-bottom: 370px; }
 
 #main {
-  padding-bottom: 60px; }
+  padding-bottom: 30px; }
 
 #sidebar {
   float: left;
@@ -920,12 +920,8 @@ body {
   left: 0;
   padding-top: 0; }
 
-.pg-inline {
-  float: left;
-  width: 100%;
-  padding-top: 1em; }
-  .pg-inline:first-child {
-    padding-top: 0; }
+#phocagallery .pagination {
+  display: none; }
 
 h1 {
   margin: 12px 0 15px;
