@@ -7,7 +7,7 @@
 
 if (!empty($this->items)) {
 	
-	echo '<div>'."\n";
+	echo '<div class="gallery-container">'."\n";
 	
 	foreach($this->items as $key => $value) {
 	
