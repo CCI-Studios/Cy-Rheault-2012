@@ -390,15 +390,6 @@ h1 {
   color: #000;
   border-bottom: 1px solid #e6e6e6; }
 
-h4 {
-  font-size: 1.4em; }
-
-h5 {
-  font-size: 1.2em; }
-
-h6 {
-  font-size: 1.0em; }
-
 h2, h3, h4, h5, h6, .cfdiv_header {
   color: #bf1e2e; }
 
@@ -500,8 +491,7 @@ input[type="submit"] {
     margin-top: 0; }
 
 .small-message {
-  margin: .5em 0;
-  max-width: 365px; }
+  margin: .5em 0; }
 
 div.chronoform {
   display: none; }
@@ -887,7 +877,7 @@ body {
   position: relative; }
   .gallery-block > div:first-child {
     background: none;
-    margin: 0 0 30px; }
+    margin: 0 0 20px; }
   .gallery-block > div > div ~ div {
     margin: 3px 0 0; }
     .ie7 .gallery-block > div > div ~ div, .ie8 .gallery-block > div > div ~ div {
@@ -922,6 +912,13 @@ body {
 
 #phocagallery .pagination {
   display: none; }
+
+span.small {
+  display: none; }
+
+div.items-row .item {
+  overflow: auto;
+  margin-top: 1em; }
 
 h1 {
   margin: 12px 0 15px;
@@ -976,12 +973,12 @@ h1 {
   .primary a {
     margin: 0 0 0 10px; }
 
-#bottom .module {
+.module.bottom-block {
   float: left;
-  width: 48.936170213%;
-  margin-left: 2.127659574%; }
-  #bottom .module:first-child {
-    margin-left: 0; }
+  width: 50%;
+  padding-left: 2%; }
+  .module.bottom-block.first {
+    padding-left: 0; }
 
 .primary li.active a,
 .primary a {
