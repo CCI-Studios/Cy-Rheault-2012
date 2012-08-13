@@ -716,7 +716,7 @@ body {
   #copyright a {
     color: #b1b1b1; }
     #copyright a:hover {
-      color: #bf1e2e;
+      color: white;
       text-decoration: none; }
 
 .module.show-menu {
