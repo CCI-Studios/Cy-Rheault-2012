@@ -928,7 +928,7 @@ div.items-row .item {
   border-top: 1px solid #e6e6e6; }
   div.items-row .item:first-child {
     margin-top: 0;
-    border-top: 3px solid #bf1e2e; }
+    border-top: 1px solid #bf1e2e; }
 
 h1 {
   margin: 12px 0 15px;
