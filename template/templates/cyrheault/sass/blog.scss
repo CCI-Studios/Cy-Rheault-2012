@@ -1,4 +1,17 @@
+.blog {
+	h2 {
+		color: #444;
+	}
+}
+
 div.items-row .item {
 	overflow: auto;
 	margin-top: 1em;
+	padding-top: 1em;
+	border-top: 1px solid $border;
+	
+	&:first-child {
+		margin-top: 0;
+		border-top: 3px solid $red;
+	}
 }
