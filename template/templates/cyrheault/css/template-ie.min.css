@@ -425,6 +425,11 @@ ul {
     #bottom ul li {
       background: url("../images/bullet.png") left 5px no-repeat; }
 
+hr {
+  border: 0;
+  border-top: 1px solid;
+  border-color: #E6E6E6; }
+
 /* forms */
 /* Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
 input[type="radio"] {
