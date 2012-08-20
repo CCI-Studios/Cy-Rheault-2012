@@ -926,14 +926,14 @@ span.small {
 .blog h2 {
   color: #444; }
 
-div.items-row .item {
+div.items-row {
   overflow: auto;
   margin-top: 1em;
   padding-top: 1em;
   border-top: 1px solid #e6e6e6; }
-  div.items-row .item:first-child {
-    margin-top: 0;
-    border-top: 1px solid #bf1e2e; }
+  div.items-row.row-0 {
+    border-top: 1px solid #bf1e2e;
+    margin-top: 0; }
 
 h1 {
   margin: 12px 0 15px;
