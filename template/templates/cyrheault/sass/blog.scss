@@ -4,14 +4,14 @@
 	}
 }
 
-div.items-row .item {
+div.items-row {
 	overflow: auto;
 	margin-top: 1em;
 	padding-top: 1em;
 	border-top: 1px solid $border;
 	
-	&:first-child {
-		margin-top: 0;
+	&.row-0 {
 		border-top: 1px solid $red;
+		margin-top: 0;
 	}
 }
