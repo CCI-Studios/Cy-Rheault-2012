@@ -8,7 +8,7 @@ class ComSlideshowDatabaseTableSlides extends KDatabaseTableDefault
 			'location'	=> 'media/com_slideshow/uploads/slides/',
 			'fieldname'	=> 'image'
 		));
-		$config->behaviors = array($uploadable);
+		$config->behaviors = array($uploadable, 'orderable');
 		parent::_initialize($config);
 	}
 }
