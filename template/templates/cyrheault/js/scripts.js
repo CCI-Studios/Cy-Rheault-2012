@@ -7,6 +7,7 @@
  * @codekit-prepend "clear.js"
  * @codekit-prepend "detectmobilebrowser.js"
  * @codekit-prepend "rollover.js"
+ * @codekit-prepend "right_click.js"
  */
 
 window.addEvent('domready', function() {
